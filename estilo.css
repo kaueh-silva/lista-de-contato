@@ -24,3 +24,38 @@ body {
     box-shadow: 0 2px 6px rgb(0red, 0, 0, .2);
 
 }
+
+.list {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+}
+
+.list-item-imagem img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+.list-item__content {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item__name {
+    font-size: 24px;
+    color: #385555;
+    margin: 0;
+}
+
+.list-item__email {
+    margin-top: 10px;
+    color: #aaa;
+}
