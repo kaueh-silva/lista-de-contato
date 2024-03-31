@@ -11,17 +11,22 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(34, 33, 33)
+}
+
+h1 {
+    color: whitesmoke;
 }
 
 .list-wrap {
-    background-color: white;
+    background-color: #000000;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     max-height: 400px;
     overflow-y: auto;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgb(0red, 0, 0, .2);
+    scrollbar-color: white black;
 
 }
 
@@ -33,7 +38,6 @@ body {
 
 .list-item {
     display: flex;
-    border-bottom: 1px solid #eee;
     padding: 16px;
 }
 
@@ -41,7 +45,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: solid 1px black;
+
 }
 
 .list-item__content {
@@ -51,11 +55,47 @@ body {
 
 .list-item__name {
     font-size: 24px;
-    color: #385555;
+    color: white;
     margin: 0;
 }
 
 .list-item__email {
     margin-top: 10px;
     color: #aaa;
+}
+
+.list-item:hover {
+    background-color: whitesmoke;
+    transition: 1s;
+    scale: 0.9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px white;
+}
+
+.list-item__action {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__action {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0.3;
+
+}
+
+.list-item:hover .list-item-imagem img {
+    border: solid 1px black;
+    transition: 1s;
+}
+
+.list-item:hover .list-item__email {
+    color: black;
+}
+
+.list-item:hover .list-item__name {
+    color: black;
 }
